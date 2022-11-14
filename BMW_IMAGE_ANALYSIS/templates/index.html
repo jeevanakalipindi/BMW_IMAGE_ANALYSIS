@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMW CAR ANALYSIS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<header class="w3-container w3-theme w3-padding" id="myHeader" style="height:470px">
+ 
+  <div class="w3-center">
+  <h4>Cars Recognition DeepLearning Model</h4><br><br>
+  <h1 class="w3-xxxlarge w3-animate-bottom">BMW Classification</h1>
+  <div class="w3-row-padding w3-center w3-margin-top">
+   <a  style="text-decoration:none;padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#7FB5DA;
+            font-size:16px;
+            font-weight:600;
+            color:#4c4c4c;
+            transition:all linear 0.15s;" href="{{ url_for('uploads',variable="CompleteAnalysis") }}"><h1>Click here For Complete Classification</h1><br>
+   </a>
+      <br><br>
+      <h2>OR</h2>
+      <h1>Choose Any of these Classifications :</h1>
+    <div class="w3-padding-32">
+      
+    </div>
+  </div>
+</header>
+
+
+
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="height:300px">
+
+
+ <a style="text-decoration:none;" href="{{ url_for('uploads',variable="CarAnalysis") }}"><h3>BMW/NOT Classification</h3><br>
+  <i class="fa fa-css3 w3-margin-bottom w3-text-theme" style="font-size:120px"> </i></a>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="height:300px">
+     <a style="text-decoration:none;" href="{{ url_for('uploads',variable="CarSeries") }}"><h3>BMW Model Classification</h3><br>
+  <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="height:300px">
+ <a style="text-decoration:none;" href="{{ url_for('uploads',variable="CarDamage") }}"><h3>Good/Damaged Car Analysis</h3><br>
+  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
